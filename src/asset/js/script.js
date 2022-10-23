@@ -48,6 +48,7 @@ export default class App {
     });
 
     this.mesh = new THREE.Mesh(this.geo, this.material);
+    this.material.needsUpdate = true;
     this.scene.add(this.mesh);
   }
   setResize() {
